@@ -1,4 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
+import 'bulma/css/bulma.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const tabs = [
   { id: '1', title: 'Tab 1', content: 'Some text 1' },
@@ -8,7 +10,6 @@ const tabs = [
 
 const Tabs = () => {
   const { tabId } = useParams();
-
   const activeTab = tabs.find(tab => tab.id === tabId);
 
   return (
