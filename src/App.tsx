@@ -5,7 +5,7 @@ import './App.scss';
 
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
-import Tabs from './pages/Tabs/Tabs';
+import TabsPage from './pages/TabsPage/TabsPage';
 
 export const App = () => {
   return (
@@ -22,8 +22,8 @@ export const App = () => {
 
             {/* nested routes */}
             <Route path="tabs">
-              <Route index element={<Tabs />} />
-              <Route path=":tabId" element={<Tabs />} />
+              <Route index element={<TabsPage />} />
+              <Route path=":tabId" element={<TabsPage />} />
             </Route>
 
             {/* not found */}
